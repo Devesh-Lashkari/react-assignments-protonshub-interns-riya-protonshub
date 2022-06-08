@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form name="form1" id="myform">
+            <div class="row">
+                <div class="col-25">
+                    <label for="fname">First Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="fname" name="firstname" placeholder="Your first name.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="lname">Last Name</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mail">Email Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="email" id="mail" name="emailaddress" placeholder="Your email address.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="mobile">Mobile No.</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="mobile" name="mobile-number" pattern="[0-9]{10}" placeholder="Your mobile number(10 digit).." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="haddress">Home Address</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="haddress" name="homeaddress" placeholder="Your home address.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="city">City</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="city" name="cityname" placeholder="Your city.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="pincode">Pin Code</label>
+                </div>
+                <div class="col-75">
+                    <input type="tel" id="pincode" name="postalcode" pattern="[0-9]{6}" placeholder="Your Pin Code(6 digit).." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="state">State</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="state" name="statename" placeholder="Your state.." required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                    <label for="country">Country</label>
+                </div>
+                <div class="col-75">
+                    <input type="text" id="country" name="countryname" placeholder="Your country.." required>
+                </div>
+            </div>
+            <div class="row">
+                <input type="submit" value="Submit" onclick="addData();">
+                <!-- <button type="button" onclick="addData();">Submit</button> -->
+            </div>
+        </form>
+        <br><br><br>
+        <div class="responses">
+            <table class="response-table">
+                <caption>Responses Received</caption>
+                <tr>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email Address</th>
+                    <th>Mobile No.</th>
+                    <th>Home Address</th>
+                    <th>City</th>
+                    <th>Pin Code</th>
+                    <th>State</th>
+                    <th>Country</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    
+</body>
+</html>
